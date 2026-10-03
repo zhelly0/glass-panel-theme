@@ -1,0 +1,11 @@
+{
+    "KPlugin": {
+        "Authors": [{ "Name": "zhelly0" }],
+        "Description": "Breeze with a frosted, rounded panel matching the SysDash and DeskClock widgets",
+        "Id": "zhelly0-glass",
+        "License": "GPL-3.0",
+        "Name": "Glass Panel",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

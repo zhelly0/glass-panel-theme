@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+<style type="text/css" id="current-color-scheme">.ColorScheme-Text { color:#fcfcfc; } .ColorScheme-Background { color:#202326; }</style>
+<g id="topleft"><path class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" d="M12,0 A12,12 0 0 0 0,12 L12,12 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" d="M12,0 A12,12 0 0 0 0,12 L1,12 A11,11 0 0 1 12,1 Z"/></g>
+<g id="topright"><path class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" d="M28,0 A12,12 0 0 1 40,12 L28,12 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" d="M28,0 A12,12 0 0 1 40,12 L39,12 A11,11 0 0 0 28,1 Z"/></g>
+<g id="bottomleft"><path class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" d="M0,28 A12,12 0 0 0 12,40 L12,28 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" d="M0,28 A12,12 0 0 0 12,40 L12,39 A11,11 0 0 1 1,28 Z"/></g>
+<g id="bottomright"><path class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" d="M40,28 A12,12 0 0 1 28,40 L28,28 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" d="M40,28 A12,12 0 0 1 28,40 L28,39 A11,11 0 0 0 39,28 Z"/></g>
+<g id="top"><rect class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" x="12" y="0" width="16" height="12"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="12" y="0" width="16" height="1"/></g>
+<g id="bottom"><rect class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" x="12" y="28" width="16" height="12"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="12" y="39" width="16" height="1"/></g>
+<g id="left"><rect class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" x="0" y="12" width="12" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="0" y="12" width="1" height="16"/></g>
+<g id="right"><rect class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" x="28" y="12" width="12" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="39" y="12" width="1" height="16"/></g>
+<g id="center"><rect class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" x="12" y="12" width="16" height="16"/></g>
+<g id="mask-topleft"><path fill="#000000" d="M12,0 A12,12 0 0 0 0,12 L12,12 Z"/></g>
+<g id="mask-topright"><path fill="#000000" d="M28,0 A12,12 0 0 1 40,12 L28,12 Z"/></g>
+<g id="mask-bottomleft"><path fill="#000000" d="M0,28 A12,12 0 0 0 12,40 L12,28 Z"/></g>
+<g id="mask-bottomright"><path fill="#000000" d="M40,28 A12,12 0 0 1 28,40 L28,28 Z"/></g>
+<g id="mask-top"><rect fill="#000000" x="12" y="0" width="16" height="12"/></g>
+<g id="mask-bottom"><rect fill="#000000" x="12" y="28" width="16" height="12"/></g>
+<g id="mask-left"><rect fill="#000000" x="0" y="12" width="12" height="16"/></g>
+<g id="mask-right"><rect fill="#000000" x="28" y="12" width="12" height="16"/></g>
+<g id="mask-center"><rect fill="#000000" x="12" y="12" width="16" height="16"/></g>
+<rect id="hint-top-margin" x="12" y="0" width="4" height="4" fill="none"/><rect id="hint-bottom-margin" x="12" y="36" width="4" height="4" fill="none"/><rect id="hint-left-margin" x="0" y="12" width="4" height="4" fill="none"/><rect id="hint-right-margin" x="36" y="12" width="4" height="4" fill="none"/>
+</svg>
