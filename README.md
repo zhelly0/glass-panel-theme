@@ -74,6 +74,22 @@ These aren't part of a Plasma theme, but complete the look:
   Application Style → Breeze → Transparency, about halfway
   (`breezerc`: `[Style] MenuOpacity=50`)
 
+## Extras
+
+### Konsole and Yakuake
+
+`extras/konsole/` has a **Glass** colour scheme (Breeze colours, 80% opacity,
+blur) and a profile using it. Terminal text is small, so it is denser than the
+panel glass.
+
+```sh
+cp extras/konsole/Glass.* ~/.local/share/konsole/
+kwriteconfig6 --file konsolerc --group "Desktop Entry" --key DefaultProfile Glass.profile
+# Yakuake as a Flatpak keeps its own copy:
+cp extras/konsole/Glass.* ~/.var/app/org.kde.yakuake/data/konsole/
+kwriteconfig6 --file ~/.var/app/org.kde.yakuake/config/konsolerc --group "Desktop Entry" --key DefaultProfile Glass.profile
+```
+
 ## License
 
 GPL-3.0, see [LICENSE](LICENSE).
