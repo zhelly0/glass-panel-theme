@@ -9,14 +9,21 @@
 <g id="left"><rect fill="none" x="0" y="12" width="12" height="16"/><rect class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" x="0" y="12" width="12" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="0" y="12" width="1" height="16"/></g>
 <g id="right"><rect fill="none" x="28" y="12" width="12" height="16"/><rect class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" x="28" y="12" width="12" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="39" y="12" width="1" height="16"/></g>
 <g id="center"><rect fill="none" x="12" y="12" width="16" height="16"/><rect class="ColorScheme-Background" fill="currentColor" fill-opacity="0.5" x="12" y="12" width="16" height="16"/></g>
-<g id="mask-topleft"><rect fill="none" x="0" y="0" width="12" height="12"/><path fill="#000000" d="M12,0 A12,12 0 0 0 0,12 L12,12 Z"/></g>
-<g id="mask-topright"><rect fill="none" x="28" y="0" width="12" height="12"/><path fill="#000000" d="M28,0 A12,12 0 0 1 40,12 L28,12 Z"/></g>
-<g id="mask-bottomleft"><rect fill="none" x="0" y="28" width="12" height="12"/><path fill="#000000" d="M0,28 A12,12 0 0 0 12,40 L12,28 Z"/></g>
-<g id="mask-bottomright"><rect fill="none" x="28" y="28" width="12" height="12"/><path fill="#000000" d="M40,28 A12,12 0 0 1 28,40 L28,28 Z"/></g>
-<g id="mask-top"><rect fill="none" x="12" y="0" width="16" height="12"/><rect fill="#000000" x="12" y="0" width="16" height="12"/></g>
-<g id="mask-bottom"><rect fill="none" x="12" y="28" width="16" height="12"/><rect fill="#000000" x="12" y="28" width="16" height="12"/></g>
-<g id="mask-left"><rect fill="none" x="0" y="12" width="12" height="16"/><rect fill="#000000" x="0" y="12" width="12" height="16"/></g>
-<g id="mask-right"><rect fill="none" x="28" y="12" width="12" height="16"/><rect fill="#000000" x="28" y="12" width="12" height="16"/></g>
-<g id="mask-center"><rect fill="none" x="12" y="12" width="16" height="16"/><rect fill="#000000" x="12" y="12" width="16" height="16"/></g>
-<rect id="hint-top-margin" width="4" height="4" fill="none"/><rect id="hint-bottom-margin" width="4" height="4" fill="none"/><rect id="hint-left-margin" width="4" height="4" fill="none"/><rect id="hint-right-margin" width="4" height="4" fill="none"/>
+<rect id="hint-tile-center" width="5" height="5" fill="none"/>
+<rect id="hint-top-margin" width="4" height="6.0000248" fill="none"/>
+<rect id="hint-bottom-margin" width="4" height="5.9999752" fill="none"/>
+<rect id="hint-right-margin" width="4" height="6.0000153" fill="none"/>
+<rect id="hint-left-margin" width="4" height="6.0000038" fill="none"/>
+<rect id="hint-top-inset" width="4" height="0.000001" fill="none"/>
+<rect id="hint-bottom-inset" width="4" height="0.000001" fill="none"/>
+<rect id="hint-right-inset" width="4" height="0.000001" fill="none"/>
+<rect id="hint-left-inset" width="4" height="0.000001" fill="none"/>
+<rect id="shadow-hint-top-margin" width="4" height="5.9999771" fill="none"/>
+<rect id="shadow-hint-bottom-margin" width="4" height="6.0000229" fill="none"/>
+<rect id="shadow-hint-right-margin" width="3.9999769" height="5.9999771" fill="none"/>
+<rect id="shadow-hint-left-margin" width="4.0000229" height="6" fill="none"/>
+<rect id="shadow-hint-top-inset" width="4" height="5.9999771" fill="none"/>
+<rect id="shadow-hint-bottom-inset" width="4" height="6.0000229" fill="none"/>
+<rect id="shadow-hint-right-inset" width="3.9999769" height="5.9999771" fill="none"/>
+<rect id="shadow-hint-left-inset" width="4.0000229" height="6" fill="none"/>
 </svg>

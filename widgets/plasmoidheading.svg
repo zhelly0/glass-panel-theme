@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<style type="text/css" id="current-color-scheme">.ColorScheme-Text { color:#fcfcfc; } .ColorScheme-Background { color:#202326; } .ColorScheme-Highlight { color:#3daee9; } .ColorScheme-NeutralText { color:#f67400; } .ColorScheme-PositiveText { color:#27ae60; }</style>
+<g id="header-topleft"><rect fill="none" x="0" y="0" width="2" height="2"/></g>
+<g id="header-topright"><rect fill="none" x="18" y="0" width="2" height="2"/></g>
+<g id="header-bottomleft"><rect fill="none" x="0" y="18" width="2" height="2"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="0" y="19" width="2" height="1"/></g>
+<g id="header-bottomright"><rect fill="none" x="18" y="18" width="2" height="2"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="18" y="19" width="2" height="1"/></g>
+<g id="header-top"><rect fill="none" x="2" y="0" width="16" height="2"/></g>
+<g id="header-bottom"><rect fill="none" x="2" y="18" width="16" height="2"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="2" y="19" width="16" height="1"/></g>
+<g id="header-left"><rect fill="none" x="0" y="2" width="2" height="16"/></g>
+<g id="header-right"><rect fill="none" x="18" y="2" width="2" height="16"/></g>
+<g id="header-center"><rect fill="none" x="2" y="2" width="16" height="16"/></g>
+<g id="footer-topleft"><rect fill="none" x="0" y="0" width="2" height="2"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="0" y="0" width="2" height="1"/></g>
+<g id="footer-topright"><rect fill="none" x="18" y="0" width="2" height="2"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="18" y="0" width="2" height="1"/></g>
+<g id="footer-bottomleft"><rect fill="none" x="0" y="18" width="2" height="2"/></g>
+<g id="footer-bottomright"><rect fill="none" x="18" y="18" width="2" height="2"/></g>
+<g id="footer-top"><rect fill="none" x="2" y="0" width="16" height="2"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="2" y="0" width="16" height="1"/></g>
+<g id="footer-bottom"><rect fill="none" x="2" y="18" width="16" height="2"/></g>
+<g id="footer-left"><rect fill="none" x="0" y="2" width="2" height="16"/></g>
+<g id="footer-right"><rect fill="none" x="18" y="2" width="2" height="16"/></g>
+<g id="footer-center"><rect fill="none" x="2" y="2" width="16" height="16"/></g>
+<rect id="hint-stretch-borders" width="1" height="1" fill="none"/>
+<rect id="hint-top-margin" width="1" height="1" fill="none"/>
+<rect id="hint-bottom-margin" width="1" height="1" fill="none"/>
+<rect id="hint-right-margin" width="1" height="1" fill="none"/>
+<rect id="hint-left-margin" width="1" height="1" fill="none"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<style type="text/css" id="current-color-scheme">.ColorScheme-Text { color:#fcfcfc; } .ColorScheme-Background { color:#202326; } .ColorScheme-Highlight { color:#3daee9; } .ColorScheme-NeutralText { color:#f67400; } .ColorScheme-PositiveText { color:#27ae60; }</style>
+<g id="sunken-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" d="M6,0 A6,6 0 0 0 0,6 L6,6 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
+<g id="sunken-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" d="M22,0 A6,6 0 0 1 28,6 L22,6 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
+<g id="sunken-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" d="M0,22 A6,6 0 0 0 6,28 L6,22 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
+<g id="sunken-bottomright"><rect fill="none" x="22" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" d="M28,22 A6,6 0 0 1 22,28 L22,22 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M28,22 A6,6 0 0 1 22,28 L22,27 A5,5 0 0 0 27,22 Z"/></g>
+<g id="sunken-top"><rect fill="none" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" x="6" y="0" width="16" height="1"/></g>
+<g id="sunken-bottom"><rect fill="none" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" x="6" y="27" width="16" height="1"/></g>
+<g id="sunken-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" x="0" y="6" width="1" height="16"/></g>
+<g id="sunken-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" x="27" y="6" width="1" height="16"/></g>
+<g id="sunken-center"><rect fill="none" x="6" y="6" width="16" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" x="6" y="6" width="16" height="16"/></g>
+<g id="plain-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
+<g id="plain-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
+<g id="plain-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
+<g id="plain-bottomright"><rect fill="none" x="22" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M28,22 A6,6 0 0 1 22,28 L22,27 A5,5 0 0 0 27,22 Z"/></g>
+<g id="plain-top"><rect fill="none" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="6" y="0" width="16" height="1"/></g>
+<g id="plain-bottom"><rect fill="none" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="6" y="27" width="16" height="1"/></g>
+<g id="plain-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="0" y="6" width="1" height="16"/></g>
+<g id="plain-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="27" y="6" width="1" height="16"/></g>
+<g id="plain-center"><rect fill="none" x="6" y="6" width="16" height="16"/></g>
+<g id="raised-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M6,0 A6,6 0 0 0 0,6 L6,6 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
+<g id="raised-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M22,0 A6,6 0 0 1 28,6 L22,6 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
+<g id="raised-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M0,22 A6,6 0 0 0 6,28 L6,22 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
+<g id="raised-bottomright"><rect fill="none" x="22" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M28,22 A6,6 0 0 1 22,28 L22,22 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M28,22 A6,6 0 0 1 22,28 L22,27 A5,5 0 0 0 27,22 Z"/></g>
+<g id="raised-top"><rect fill="none" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" x="6" y="0" width="16" height="1"/></g>
+<g id="raised-bottom"><rect fill="none" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" x="6" y="27" width="16" height="1"/></g>
+<g id="raised-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" x="0" y="6" width="1" height="16"/></g>
+<g id="raised-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" x="27" y="6" width="1" height="16"/></g>
+<g id="raised-center"><rect fill="none" x="6" y="6" width="16" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="6" y="6" width="16" height="16"/></g>
+<rect id="hint-tile-center" width="2.0329318" height="2.077126" fill="none"/>
+<rect id="plain-hint-top-margin" width="2" height="6" fill="none"/>
+<rect id="plain-hint-bottom-margin" width="2" height="6" fill="none"/>
+<rect id="plain-hint-left-margin" width="6" height="1.9999999" fill="none"/>
+<rect id="plain-hint-right-margin" width="6" height="2" fill="none"/>
+<rect id="raised-hint-bottom-margin" width="2" height="8" fill="none"/>
+<rect id="raised-hint-right-margin" width="6" height="2" fill="none"/>
+<rect id="raised-hint-left-margin" width="6" height="1.9999999" fill="none"/>
+<rect id="raised-hint-top-margin" width="2" height="6" fill="none"/>
+<rect id="sunken-hint-top-margin" width="2" height="6" fill="none"/>
+<rect id="sunken-hint-bottom-margin" width="2" height="6" fill="none"/>
+<rect id="sunken-hint-left-margin" width="6" height="1.9999999" fill="none"/>
+<rect id="sunken-hint-right-margin" width="6" height="2" fill="none"/>
+</svg>
