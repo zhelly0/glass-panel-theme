@@ -67,19 +67,23 @@ SCROLL_TRACK = style(("Text", 0.05), r=3)
 SCROLL_THUMB = style(("Text", 0.35), r=3)
 SCROLL_THUMB_HOVER = style(("Highlight", 0.75), r=3)
 
-# Surfaces with explicit padding. (path, style, padding, with blur mask)
+# Surfaces with explicit padding: (path, style, padding). Plasma uses the
+# "translucent/" variant when KWin can blur; the plain variant is the fallback
+# without compositing, so it is dense to stay readable without blur. "solid/"
+# is used for panels while a window is maximized (adaptive opacity).
 SURFACES = [
-    # Panel. "solid" is used while a window is maximized (adaptive opacity).
-    ("widgets/panel-background",             GLASS,       4, True),
-    ("translucent/widgets/panel-background", GLASS,       4, True),
-    ("solid/widgets/panel-background",       GLASS_SOLID, 4, True),
-    # Popups and hover tooltips. The plain variants are fallbacks without
-    # compositing/blur, so they stay dense for readability.
-    ("dialogs/background",                   GLASS_DENSE, 6, True),
-    ("translucent/dialogs/background",       GLASS,       6, True),
-    ("widgets/tooltip",                      GLASS_DENSE, 6, True),
-    ("translucent/widgets/tooltip",          GLASS,       6, True),
+    ("widgets/panel-background",             GLASS_DENSE, 4),
+    ("translucent/widgets/panel-background", GLASS,       4),
+    ("solid/widgets/panel-background",       GLASS_SOLID, 4),
+    ("dialogs/background",                   GLASS_DENSE, 6),
+    ("translucent/dialogs/background",       GLASS,       6),
 ]
+
+# Tooltips look exactly like popups, so their files are symlinks rather than copies.
+LINKS = {
+    "widgets/tooltip": "dialogs/background",
+    "translucent/widgets/tooltip": "translucent/dialogs/background",
+}
 
 # Controls derived from Breeze: {path: {frame prefix: style}}. Every frame
 # prefix Breeze has must be listed, because a replaced file is used on its own
@@ -209,11 +213,11 @@ def document(body):
             f'<style type="text/css" id="current-color-scheme">{COLOURS}</style>\n{body}\n</svg>\n')
 
 
-def surface_svg(st, pad, with_mask):
+def surface_svg(st, pad):
     hints = "".join(f'<rect id="hint-{side}-margin" width="{pad}" height="{pad}" fill="none"/>'
                     for side in ("top", "bottom", "left", "right"))
-    body = frame("", st) + ("\n" + frame("mask-", st, mask=True) if with_mask else "") + "\n" + hints
-    return document(body)
+    # The mask frame tells KWin which area to blur.
+    return document(frame("", st) + "\n" + frame("mask-", st, mask=True) + "\n" + hints)
 
 
 def breeze_hints(path):
@@ -247,8 +251,16 @@ def write(path, text):
     print("wrote", path)
 
 
-for path, st, pad, with_mask in SURFACES:
-    write(path, surface_svg(st, pad, with_mask))
+for path, st, pad in SURFACES:
+    write(path, surface_svg(st, pad))
+
+for link, target in LINKS.items():
+    out = os.path.join(HERE, link + ".svg")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    if os.path.lexists(out):
+        os.remove(out)
+    os.symlink(os.path.relpath(os.path.join(HERE, target + ".svg"), os.path.dirname(out)), out)
+    print("linked", link, "->", target)
 
 for path, styles in DERIVED.items():
     missing = breeze_frames(path) - set(styles)

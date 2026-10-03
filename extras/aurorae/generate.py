@@ -4,8 +4,7 @@
 Aurorae themes use fixed colours (they don't follow the colour scheme), so the
 values below are taken from Breeze Dark; adjust them for other schemes.
 
-Writes the theme to ~/.local/share/aurorae/themes/zhelly0-glass (and a copy
-next to this script). Activate with:
+Writes the theme to ~/.local/share/aurorae/themes/zhelly0-glass. Activate with:
   kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key library org.kde.kwin.aurorae
   kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key theme __aurorae__svg__zhelly0-glass
   qdbus6 org.kde.KWin /KWin reconfigure
@@ -15,7 +14,6 @@ import shutil
 
 NAME = "zhelly0-glass"
 OUT = os.path.expanduser(f"~/.local/share/aurorae/themes/{NAME}")
-COPY = os.path.join(os.path.dirname(os.path.abspath(__file__)), NAME)
 
 # ---- colours (Breeze Dark) and the glass recipe -------------------------------
 BG = "#202326"        # window background
@@ -185,8 +183,6 @@ def main():
     for fname, text in files.items():
         with open(os.path.join(OUT, fname), "w") as fh:
             fh.write(text)
-    shutil.rmtree(COPY, ignore_errors=True)
-    shutil.copytree(OUT, COPY)
     print(f"wrote {len(files)} files to {OUT}")
 
 
