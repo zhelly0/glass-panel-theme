@@ -34,8 +34,9 @@ CONTROL_RADIUS = 6   # fields, highlights, buttons inside surfaces
 
 def style(fill=None, line=None, r=CONTROL_RADIUS, sides="tblr", bar=None, bar_side="b"):
     """fill/line: (colour class, opacity) or None. sides: which edges get the line.
-    bar: (colour class, opacity, thickness px) indicator drawn along bar_side,
-    inset by the corner radius (e.g. the "app is running" line on taskbar buttons)."""
+    bar: (colour class, opacity, thickness px) indicator drawn along bar_side and
+    around its two rounded corners, a shallow U (the "app is running" line on
+    taskbar buttons)."""
     return {"fill": fill, "line": line, "r": r, "sides": sides, "bar": bar, "bar_side": bar_side}
 
 
@@ -191,19 +192,37 @@ def frame(prefix, st, mask=False):
         if h is None: h = t
         return rect(paint((cls, op)), x, y, w, h)
 
+    # Which corners the indicator bar wraps around, per side: the bar bends up
+    # around the rounded corners into a shallow U (or n, or a C for side panels).
+    BAR_CORNERS = {"b": ("bottomleft", "bottomright"), "t": ("topleft", "topright"),
+                   "l": ("topleft", "bottomleft"), "r": ("topright", "bottomright")}
+
+    def bar_corner(name):
+        if mask or not st.get("bar") or not rounded or name not in BAR_CORNERS[st.get("bar_side", "b")]:
+            return ""
+        cls, op, t = st["bar"]
+        r2 = R - t
+        d = {
+            "topleft":     f"M{R},0 A{R},{R} 0 0 0 0,{R} L{t},{R} A{r2},{r2} 0 0 1 {R},{t} Z",
+            "topright":    f"M{a},0 A{R},{R} 0 0 1 {b},{R} L{b-t},{R} A{r2},{r2} 0 0 0 {a},{t} Z",
+            "bottomleft":  f"M0,{a} A{R},{R} 0 0 0 {R},{b} L{R},{b-t} A{r2},{r2} 0 0 1 {t},{a} Z",
+            "bottomright": f"M{b},{a} A{R},{R} 0 0 1 {a},{b} L{a},{b-t} A{r2},{r2} 0 0 0 {b-t},{a} Z",
+        }[name]
+        return f'<path {paint((cls, op))} d="{d}"/>'
+
     def ring(d):
         return f'<path {ln} d="{d}"/>' if ln else ""
 
     if rounded:
         corners = {
             "topleft":     shape(f"M{R},0 A{R},{R} 0 0 0 0,{R} L{R},{R} Z")
-                           + ring(f"M{R},0 A{R},{R} 0 0 0 0,{R} L1,{R} A{r1},{r1} 0 0 1 {R},1 Z"),
+                           + ring(f"M{R},0 A{R},{R} 0 0 0 0,{R} L1,{R} A{r1},{r1} 0 0 1 {R},1 Z") + bar_corner("topleft"),
             "topright":    shape(f"M{a},0 A{R},{R} 0 0 1 {b},{R} L{a},{R} Z")
-                           + ring(f"M{a},0 A{R},{R} 0 0 1 {b},{R} L{b-1},{R} A{r1},{r1} 0 0 0 {a},1 Z"),
+                           + ring(f"M{a},0 A{R},{R} 0 0 1 {b},{R} L{b-1},{R} A{r1},{r1} 0 0 0 {a},1 Z") + bar_corner("topright"),
             "bottomleft":  shape(f"M0,{a} A{R},{R} 0 0 0 {R},{b} L{R},{a} Z")
-                           + ring(f"M0,{a} A{R},{R} 0 0 0 {R},{b} L{R},{b-1} A{r1},{r1} 0 0 1 1,{a} Z"),
+                           + ring(f"M0,{a} A{R},{R} 0 0 0 {R},{b} L{R},{b-1} A{r1},{r1} 0 0 1 1,{a} Z") + bar_corner("bottomleft"),
             "bottomright": shape(f"M{b},{a} A{R},{R} 0 0 1 {a},{b} L{a},{a} Z")
-                           + ring(f"M{b},{a} A{R},{R} 0 0 1 {a},{b} L{a},{b-1} A{r1},{r1} 0 0 0 {b-1},{a} Z"),
+                           + ring(f"M{b},{a} A{R},{R} 0 0 1 {a},{b} L{a},{b-1} A{r1},{r1} 0 0 0 {b-1},{a} Z") + bar_corner("bottomright"),
         }
     else:
         corners = {
