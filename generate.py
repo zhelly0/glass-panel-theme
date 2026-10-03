@@ -32,12 +32,12 @@ SURFACE_RADIUS = 12  # panel, popups, tooltips, widget backgrounds
 CONTROL_RADIUS = 6   # fields, highlights, buttons inside surfaces
 
 
-def style(fill=None, line=None, r=CONTROL_RADIUS, sides="tblr", bar=None, bar_side="b"):
+def style(fill=None, line=None, r=CONTROL_RADIUS, sides="tblr", bar=None, bar_side="b", bar_shape="pill"):
     """fill/line: (colour class, opacity) or None. sides: which edges get the line.
     bar: (colour class, opacity, thickness px) indicator drawn along bar_side and
     around its two rounded corners, a shallow U (the "app is running" line on
     taskbar buttons)."""
-    return {"fill": fill, "line": line, "r": r, "sides": sides, "bar": bar, "bar_side": bar_side}
+    return {"fill": fill, "line": line, "r": r, "sides": sides, "bar": bar, "bar_side": bar_side, "bar_shape": bar_shape}
 
 
 # Surfaces
@@ -201,6 +201,22 @@ def frame(prefix, st, mask=False):
         if mask or not st.get("bar") or not rounded or name not in BAR_CORNERS[st.get("bar_side", "b")]:
             return ""
         cls, op, t = st["bar"]
+        if st.get("bar_shape") == "pill":
+            # Rounded end cap: a half disc at the inner edge of the corner piece,
+            # so the bar reads as a separate pill even next to another button.
+            h = t / 2
+            side = st.get("bar_side", "b")
+            if side in "bt":
+                y0 = b - t if side == "b" else 0
+                x0 = R if name.endswith("left") else a
+                sweep = 0 if name.endswith("left") else 1
+                d = f"M{x0},{y0} A{h},{h} 0 0 {sweep} {x0},{y0 + t} Z"
+            else:
+                x0 = b - t if side == "r" else 0
+                y0 = R if name.startswith("top") else a
+                sweep = 1 if name.startswith("top") else 0
+                d = f"M{x0},{y0} A{h},{h} 0 0 {sweep} {x0 + t},{y0} Z"
+            return f'<path {paint((cls, op))} d="{d}"/>'
         r2 = R - t
         d = {
             "topleft":     f"M{R},0 A{R},{R} 0 0 0 0,{R} L{t},{R} A{r2},{r2} 0 0 1 {R},{t} Z",
