@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-<style type="text/css" id="current-color-scheme">.ColorScheme-Text { color:#fcfcfc; } .ColorScheme-Background { color:#202326; } .ColorScheme-Highlight { color:#3daee9; } .ColorScheme-NeutralText { color:#f67400; } .ColorScheme-PositiveText { color:#27ae60; }</style>
+<style type="text/css" id="current-color-scheme">.ColorScheme-Text { color:#fcfcfc; } .ColorScheme-Background { color:#202326; } .ColorScheme-Highlight { color:#3daee9; } .ColorScheme-NeutralText { color:#f67400; } .ColorScheme-PositiveText { color:#27ae60; } .ColorScheme-Shadow { color:#000000; }</style>
 <g id="normal-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M6,0 A6,6 0 0 0 0,6 L6,6 Z"/></g>
 <g id="normal-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M22,0 A6,6 0 0 1 28,6 L22,6 Z"/></g>
 <g id="normal-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M0,22 A6,6 0 0 0 6,28 L6,22 Z"/></g>
@@ -216,6 +216,7 @@
 <g id="west-progress-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-PositiveText" fill="currentColor" fill-opacity="0.3" x="0" y="6" width="6" height="16"/></g>
 <g id="west-progress-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-PositiveText" fill="currentColor" fill-opacity="0.3" x="22" y="6" width="6" height="16"/></g>
 <g id="west-progress-center"><rect fill="none" x="6" y="6" width="16" height="16"/><rect class="ColorScheme-PositiveText" fill="currentColor" fill-opacity="0.3" x="6" y="6" width="16" height="16"/></g>
+
 <rect id="normal-hint-top-margin" width="4" height="4" fill="none"/>
 <rect id="normal-hint-bottom-margin" width="4" height="4" fill="none"/>
 <rect id="normal-hint-right-margin" width="4" height="4" fill="none"/>

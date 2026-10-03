@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-<style type="text/css" id="current-color-scheme">.ColorScheme-Text { color:#fcfcfc; } .ColorScheme-Background { color:#202326; } .ColorScheme-Highlight { color:#3daee9; } .ColorScheme-NeutralText { color:#f67400; } .ColorScheme-PositiveText { color:#27ae60; }</style>
+<style type="text/css" id="current-color-scheme">.ColorScheme-Text { color:#fcfcfc; } .ColorScheme-Background { color:#202326; } .ColorScheme-Highlight { color:#3daee9; } .ColorScheme-NeutralText { color:#f67400; } .ColorScheme-PositiveText { color:#27ae60; } .ColorScheme-Shadow { color:#000000; }</style>
 <g id="base-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" d="M6,0 A6,6 0 0 0 0,6 L6,6 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
 <g id="base-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" d="M22,0 A6,6 0 0 1 28,6 L22,6 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
 <g id="base-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.07" d="M0,22 A6,6 0 0 0 6,28 L6,22 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.16" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
@@ -36,6 +36,7 @@
 <g id="focusframe-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" x="0" y="6" width="1" height="16"/></g>
 <g id="focusframe-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" x="27" y="6" width="1" height="16"/></g>
 <g id="focusframe-center"><rect fill="none" x="6" y="6" width="16" height="16"/></g>
+
 <rect id="hint-tile-center" width="2.03293180466" height="2.07712602615" fill="none"/>
 <rect id="hint-focus-over-base" width="2.03293180466" height="2.07712602615" fill="none"/>
 <rect id="base-hint-left-margin" width="6" height="1.9999999" fill="none"/>

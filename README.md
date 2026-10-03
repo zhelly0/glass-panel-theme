@@ -21,6 +21,11 @@ to Breeze:
 | `widgets/tasks` | Taskbar buttons: normal, hover, focused, needs attention, minimized, progress |
 | `widgets/plasmoidheading` | Popup headers and footers (a thin separator instead of a shaded bar) |
 | `widgets/frame`, `widgets/tabbar`, `widgets/menubaritem` | Frames, active tabs, menu bar items |
+| `widgets/button` | Buttons and tool buttons (normal, hover, pressed, focus) |
+| `widgets/slider` | Sliders: track, filled part and handle (e.g. volume) |
+| `widgets/scrollbar` | Scrollbars in Plasma popups |
+
+![Buttons, sliders and scrollbars](docs/controls-preview.png)
 
 The control graphics are derived from Breeze's own files: frame names and
 padding hints are copied verbatim, so sizes and alignment match Breeze and only

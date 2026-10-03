@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<style type="text/css" id="current-color-scheme">.ColorScheme-Text { color:#fcfcfc; } .ColorScheme-Background { color:#202326; } .ColorScheme-Highlight { color:#3daee9; } .ColorScheme-NeutralText { color:#f67400; } .ColorScheme-PositiveText { color:#27ae60; } .ColorScheme-Shadow { color:#000000; }</style>
+<g id="background-horizontal-topleft"><rect fill="none" x="0" y="0" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M3,0 A3,3 0 0 0 0,3 L3,3 Z"/></g>
+<g id="background-horizontal-topright"><rect fill="none" x="19" y="0" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M19,0 A3,3 0 0 1 22,3 L19,3 Z"/></g>
+<g id="background-horizontal-bottomleft"><rect fill="none" x="0" y="19" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M0,19 A3,3 0 0 0 3,22 L3,19 Z"/></g>
+<g id="background-horizontal-bottomright"><rect fill="none" x="19" y="19" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M22,19 A3,3 0 0 1 19,22 L19,19 Z"/></g>
+<g id="background-horizontal-top"><rect fill="none" x="3" y="0" width="16" height="3"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" x="3" y="0" width="16" height="3"/></g>
+<g id="background-horizontal-bottom"><rect fill="none" x="3" y="19" width="16" height="3"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" x="3" y="19" width="16" height="3"/></g>
+<g id="background-horizontal-left"><rect fill="none" x="0" y="3" width="3" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" x="0" y="3" width="3" height="16"/></g>
+<g id="background-horizontal-right"><rect fill="none" x="19" y="3" width="3" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" x="19" y="3" width="3" height="16"/></g>
+<g id="background-horizontal-center"><rect fill="none" x="3" y="3" width="16" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" x="3" y="3" width="16" height="16"/></g>
+<g id="background-vertical-topleft"><rect fill="none" x="0" y="0" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M3,0 A3,3 0 0 0 0,3 L3,3 Z"/></g>
+<g id="background-vertical-topright"><rect fill="none" x="19" y="0" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M19,0 A3,3 0 0 1 22,3 L19,3 Z"/></g>
+<g id="background-vertical-bottomleft"><rect fill="none" x="0" y="19" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M0,19 A3,3 0 0 0 3,22 L3,19 Z"/></g>
+<g id="background-vertical-bottomright"><rect fill="none" x="19" y="19" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" d="M22,19 A3,3 0 0 1 19,22 L19,19 Z"/></g>
+<g id="background-vertical-top"><rect fill="none" x="3" y="0" width="16" height="3"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" x="3" y="0" width="16" height="3"/></g>
+<g id="background-vertical-bottom"><rect fill="none" x="3" y="19" width="16" height="3"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" x="3" y="19" width="16" height="3"/></g>
+<g id="background-vertical-left"><rect fill="none" x="0" y="3" width="3" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" x="0" y="3" width="3" height="16"/></g>
+<g id="background-vertical-right"><rect fill="none" x="19" y="3" width="3" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" x="19" y="3" width="3" height="16"/></g>
+<g id="background-vertical-center"><rect fill="none" x="3" y="3" width="16" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.05" x="3" y="3" width="16" height="16"/></g>
+<g id="slider-topleft"><rect fill="none" x="0" y="0" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.35" d="M3,0 A3,3 0 0 0 0,3 L3,3 Z"/></g>
+<g id="slider-topright"><rect fill="none" x="19" y="0" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.35" d="M19,0 A3,3 0 0 1 22,3 L19,3 Z"/></g>
+<g id="slider-bottomleft"><rect fill="none" x="0" y="19" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.35" d="M0,19 A3,3 0 0 0 3,22 L3,19 Z"/></g>
+<g id="slider-bottomright"><rect fill="none" x="19" y="19" width="3" height="3"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.35" d="M22,19 A3,3 0 0 1 19,22 L19,19 Z"/></g>
+<g id="slider-top"><rect fill="none" x="3" y="0" width="16" height="3"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.35" x="3" y="0" width="16" height="3"/></g>
+<g id="slider-bottom"><rect fill="none" x="3" y="19" width="16" height="3"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.35" x="3" y="19" width="16" height="3"/></g>
+<g id="slider-left"><rect fill="none" x="0" y="3" width="3" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.35" x="0" y="3" width="3" height="16"/></g>
+<g id="slider-right"><rect fill="none" x="19" y="3" width="3" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.35" x="19" y="3" width="3" height="16"/></g>
+<g id="slider-center"><rect fill="none" x="3" y="3" width="16" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.35" x="3" y="3" width="16" height="16"/></g>
+<g id="mouseover-slider-topleft"><rect fill="none" x="0" y="0" width="3" height="3"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.75" d="M3,0 A3,3 0 0 0 0,3 L3,3 Z"/></g>
+<g id="mouseover-slider-topright"><rect fill="none" x="19" y="0" width="3" height="3"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.75" d="M19,0 A3,3 0 0 1 22,3 L19,3 Z"/></g>
+<g id="mouseover-slider-bottomleft"><rect fill="none" x="0" y="19" width="3" height="3"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.75" d="M0,19 A3,3 0 0 0 3,22 L3,19 Z"/></g>
+<g id="mouseover-slider-bottomright"><rect fill="none" x="19" y="19" width="3" height="3"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.75" d="M22,19 A3,3 0 0 1 19,22 L19,19 Z"/></g>
+<g id="mouseover-slider-top"><rect fill="none" x="3" y="0" width="16" height="3"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.75" x="3" y="0" width="16" height="3"/></g>
+<g id="mouseover-slider-bottom"><rect fill="none" x="3" y="19" width="16" height="3"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.75" x="3" y="19" width="16" height="3"/></g>
+<g id="mouseover-slider-left"><rect fill="none" x="0" y="3" width="3" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.75" x="0" y="3" width="3" height="16"/></g>
+<g id="mouseover-slider-right"><rect fill="none" x="19" y="3" width="3" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.75" x="19" y="3" width="3" height="16"/></g>
+<g id="mouseover-slider-center"><rect fill="none" x="3" y="3" width="16" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.75" x="3" y="3" width="16" height="16"/></g>
+
+<rect id="hint-tile-center" width="2" height="2" fill="none"/>
+<rect id="private-hint-show-separator" width="2" height="2" fill="none"/>
+<rect id="background-horizontal-hint-right-inset" width="6" height="3" fill="none"/>
+<rect id="background-horizontal-hint-top-inset" width="3" height="6" fill="none"/>
+<rect id="background-horizontal-hint-left-inset" width="6" height="3" fill="none"/>
+<rect id="background-horizontal-hint-bottom-inset" width="3" height="6" fill="none"/>
+<rect id="background-vertical-hint-right-inset" width="6" height="3" fill="none"/>
+<rect id="background-vertical-hint-top-inset" width="3" height="6" fill="none"/>
+<rect id="background-vertical-hint-left-inset" width="6" height="3" fill="none"/>
+<rect id="background-vertical-hint-bottom-inset" width="3" height="6" fill="none"/>
+<rect id="slider-hint-right-inset" width="6" height="3" fill="none"/>
+<rect id="slider-hint-top-inset" width="3" height="6" fill="none"/>
+<rect id="slider-hint-left-inset" width="6" height="3" fill="none"/>
+<rect id="slider-hint-bottom-inset" width="3" height="6" fill="none"/>
+<rect id="mouseover-slider-hint-right-inset" width="6" height="3" fill="none"/>
+<rect id="mouseover-slider-hint-top-inset" width="3" height="6" fill="none"/>
+<rect id="mouseover-slider-hint-left-inset" width="6" height="3" fill="none"/>
+<rect id="mouseover-slider-hint-bottom-inset" width="3" height="6" fill="none"/>
+<rect id="hint-scrollbar-size" width="6" height="6" fill="none"/>
+</svg>

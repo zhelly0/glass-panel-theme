@@ -58,6 +58,14 @@ HEADER = style(None, ("Text", 0.12), r=0, sides="b")
 FOOTER = style(None, ("Text", 0.12), r=0, sides="t")
 FRAME_PLAIN = style(None, ("Text", 0.10))
 FRAME_RAISED = style(("Text", 0.10), ("Text", 0.16))
+# Buttons: a light glass pill; hover/focus are accent rings drawn over it
+BUTTON = style(("Text", 0.10), ("Text", 0.18))
+# Thin tracks (slider grooves, scrollbars) use Breeze's 3 px corners
+TRACK = style(("Text", 0.16), r=3)
+TRACK_FILL = style(("Highlight", 0.90), r=3)
+SCROLL_TRACK = style(("Text", 0.05), r=3)
+SCROLL_THUMB = style(("Text", 0.35), r=3)
+SCROLL_THUMB_HOVER = style(("Highlight", 0.75), r=3)
 
 # Surfaces with explicit padding. (path, style, padding, with blur mask)
 SURFACES = [
@@ -87,12 +95,17 @@ DERIVED = {
     "widgets/tabbar": {f"{edge}-active-tab": ACCENT_HOVER for edge in ("north", "south", "east", "west")},
     "widgets/menubaritem": {"normal": EMPTY, "hover": HOVER, "pressed": ACCENT},
     "widgets/background": {"": GLASS, "toolbutton-pressed": ACCENT},
+    "widgets/button": {"normal": BUTTON, "hover": RING_HOVER, "focus": RING_FOCUS, "pressed": ACCENT,
+                       "toolbutton-hover": HOVER, "toolbutton-pressed": ACCENT, "toolbutton-focus": RING_FOCUS},
+    "widgets/scrollbar": {"background-horizontal": SCROLL_TRACK, "background-vertical": SCROLL_TRACK,
+                          "slider": SCROLL_THUMB, "mouseover-slider": SCROLL_THUMB_HOVER},
+    "widgets/slider": {"groove": TRACK, "groove-highlight": TRACK_FILL},
     "widgets/translucentbackground": {"": GLASS},
 }
 
 COLOURS = (".ColorScheme-Text { color:#fcfcfc; } .ColorScheme-Background { color:#202326; } "
            ".ColorScheme-Highlight { color:#3daee9; } .ColorScheme-NeutralText { color:#f67400; } "
-           ".ColorScheme-PositiveText { color:#27ae60; }")
+           ".ColorScheme-PositiveText { color:#27ae60; } .ColorScheme-Shadow { color:#000000; }")
 
 
 def paint(spec):
@@ -101,6 +114,31 @@ def paint(spec):
     cls, op = spec
     return f'class="ColorScheme-{cls}" fill="currentColor" fill-opacity="{op}"'
 
+
+# Non-frame elements, drawn at exactly Breeze's sizes (Plasma sizes the
+# slider handle from these): {path: {element id: (size, svg body at 0,0)}}.
+def circle(size, d, fill=None, line=None, width=1.0):
+    """A circle of diameter d centred in a size x size box."""
+    c, r = size / 2, d / 2
+    body = f'<rect fill="none" x="0" y="0" width="{size}" height="{size}"/>'
+    if fill:
+        body += f'<circle {paint(fill)} cx="{c}" cy="{c}" r="{r}"/>'
+    if line:
+        cls, op = line
+        body += (f'<circle class="ColorScheme-{cls}" fill="none" stroke="currentColor" stroke-opacity="{op}" '
+                 f'stroke-width="{width}" cx="{c}" cy="{c}" r="{r - width / 2}"/>')
+    return body
+
+
+HANDLE = {
+    "slider-handle": circle(20, 18, fill=("Text", 0.92), line=("Background", 0.35)),
+    "slider-hover":  circle(20, 20, line=("Highlight", 1.0), width=1.5),
+    "slider-focus":  circle(24, 24, line=("Highlight", 0.8), width=2),
+    "slider-shadow": circle(26, 22, fill=("Shadow", 0.30)),
+}
+EXTRA = {
+    "widgets/slider": {f"{o}-{k}": v for o in ("horizontal", "vertical") for k, v in HANDLE.items()},
+}
 
 def frame(prefix, st, mask=False):
     """One 9-slice frame. Corner outlines are filled 1 px rings rather than
@@ -217,4 +255,7 @@ for path, styles in DERIVED.items():
     if missing:
         raise SystemExit(f"{path}: Breeze has frames not covered here: {sorted(missing)}")
     body = "\n".join(frame(prefix, st) for prefix, st in styles.items())
-    write(path, document(body + "\n" + "\n".join(breeze_hints(path))))
+    # Extra elements are placed side by side below the frames so they don't overlap.
+    extras = "".join(f'<g id="{eid}" transform="translate({60 + 40 * i},60)">{svgbody}</g>'
+                     for i, (eid, svgbody) in enumerate(EXTRA.get(path, {}).items()))
+    write(path, document(body + "\n" + extras + "\n" + "\n".join(breeze_hints(path))))
