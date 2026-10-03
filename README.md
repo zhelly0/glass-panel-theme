@@ -5,6 +5,8 @@ popups and tooltips. It is designed to match the glass look of the
 [SysDash](https://github.com/zhelly0/sysdash) and
 [DeskClock](https://github.com/zhelly0/deskclock) widgets.
 
+![Glass Panel: KRunner, the taskbar and the SysDash/DeskClock widgets](docs/screenshot.png)
+
 Only three graphics are replaced; everything else falls back to Breeze:
 
 | Graphic | Used for |
