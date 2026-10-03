@@ -47,8 +47,8 @@ plasma-apply-desktoptheme default && plasma-apply-desktoptheme zhelly0-glass
 
 These aren't part of a Plasma theme, but complete the look:
 
-- **Smooth blur without grain** (matches the widgets' blur):
-  `kwriteconfig6 --file kwinrc --group Effect-blur --key BlurStrength 5`,
+- **Smooth blur without grain** (measured to match the widgets' glass):
+  `kwriteconfig6 --file kwinrc --group Effect-blur --key BlurStrength 3`,
   `kwriteconfig6 --file kwinrc --group Effect-blur --key NoiseStrength 0`, then
   `qdbus6 org.kde.KWin /Effects org.kde.kwin.Effects.reconfigureEffect blur`
 - **Translucent app menus** (Breeze): System Settings → Colors & Themes →
