@@ -24,7 +24,7 @@ effect that older themes relied on for this).
 The folder name must match the theme id:
 
 ```sh
-git clone <this repo> ~/.local/share/plasma/desktoptheme/zhelly0-glass
+git clone https://github.com/zhelly0/glass-panel-theme ~/.local/share/plasma/desktoptheme/zhelly0-glass
 plasma-apply-desktoptheme zhelly0-glass
 ```
 
