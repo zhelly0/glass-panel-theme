@@ -90,6 +90,24 @@ cp extras/konsole/Glass.* ~/.var/app/org.kde.yakuake/data/konsole/
 kwriteconfig6 --file ~/.var/app/org.kde.yakuake/config/konsolerc --group "Desktop Entry" --key DefaultProfile Glass.profile
 ```
 
+### Window title bars (Aurorae)
+
+`extras/aurorae/` generates a **Glass** Aurorae decoration: blurred glass title
+bars (same 50% tint as the panel, 10 px rounded top corners, 1 px border) and
+round glass buttons; close turns red on hover. Aurorae themes use fixed
+colours, so `generate.py` has Breeze Dark's values at the top.
+
+```sh
+python3 extras/aurorae/generate.py      # writes ~/.local/share/aurorae/themes/zhelly0-glass
+kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key library org.kde.kwin.aurorae
+kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key theme __aurorae__svg__zhelly0-glass
+qdbus6 org.kde.KWin /KWin reconfigure
+```
+
+Blur needs the unprefixed `mask-*` frame in `decoration.svg`; Aurorae uses it
+to tell KWin which area to blur. Revert in System Settings → Window
+Decorations (pick Breeze).
+
 ## License
 
 GPL-3.0, see [LICENSE](LICENSE).
