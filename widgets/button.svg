@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<style type="text/css" id="current-color-scheme">.ColorScheme-Text { color:#fcfcfc; } .ColorScheme-Background { color:#202326; } .ColorScheme-Highlight { color:#3daee9; } .ColorScheme-NeutralText { color:#f67400; } .ColorScheme-PositiveText { color:#27ae60; } .ColorScheme-Shadow { color:#000000; }</style>
+<g id="normal-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M6,0 A6,6 0 0 0 0,6 L6,6 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
+<g id="normal-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M22,0 A6,6 0 0 1 28,6 L22,6 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
+<g id="normal-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M0,22 A6,6 0 0 0 6,28 L6,22 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
+<g id="normal-bottomright"><rect fill="none" x="22" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" d="M28,22 A6,6 0 0 1 22,28 L22,22 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" d="M28,22 A6,6 0 0 1 22,28 L22,27 A5,5 0 0 0 27,22 Z"/></g>
+<g id="normal-top"><rect fill="none" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" x="6" y="0" width="16" height="1"/></g>
+<g id="normal-bottom"><rect fill="none" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" x="6" y="27" width="16" height="1"/></g>
+<g id="normal-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" x="0" y="6" width="1" height="16"/></g>
+<g id="normal-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" x="27" y="6" width="1" height="16"/></g>
+<g id="normal-center"><rect fill="none" x="6" y="6" width="16" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.1" x="6" y="6" width="16" height="16"/></g>
+<g id="hover-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.6" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
+<g id="hover-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.6" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
+<g id="hover-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.6" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
+<g id="hover-bottomright"><rect fill="none" x="22" y="22" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.6" d="M28,22 A6,6 0 0 1 22,28 L22,27 A5,5 0 0 0 27,22 Z"/></g>
+<g id="hover-top"><rect fill="none" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.6" x="6" y="0" width="16" height="1"/></g>
+<g id="hover-bottom"><rect fill="none" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.6" x="6" y="27" width="16" height="1"/></g>
+<g id="hover-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.6" x="0" y="6" width="1" height="16"/></g>
+<g id="hover-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.6" x="27" y="6" width="1" height="16"/></g>
+<g id="hover-center"><rect fill="none" x="6" y="6" width="16" height="16"/></g>
+<g id="focus-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
+<g id="focus-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
+<g id="focus-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
+<g id="focus-bottomright"><rect fill="none" x="22" y="22" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" d="M28,22 A6,6 0 0 1 22,28 L22,27 A5,5 0 0 0 27,22 Z"/></g>
+<g id="focus-top"><rect fill="none" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" x="6" y="0" width="16" height="1"/></g>
+<g id="focus-bottom"><rect fill="none" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" x="6" y="27" width="16" height="1"/></g>
+<g id="focus-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" x="0" y="6" width="1" height="16"/></g>
+<g id="focus-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" x="27" y="6" width="1" height="16"/></g>
+<g id="focus-center"><rect fill="none" x="6" y="6" width="16" height="16"/></g>
+<g id="pressed-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" d="M6,0 A6,6 0 0 0 0,6 L6,6 Z"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
+<g id="pressed-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" d="M22,0 A6,6 0 0 1 28,6 L22,6 Z"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
+<g id="pressed-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" d="M0,22 A6,6 0 0 0 6,28 L6,22 Z"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
+<g id="pressed-bottomright"><rect fill="none" x="22" y="22" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" d="M28,22 A6,6 0 0 1 22,28 L22,22 Z"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" d="M28,22 A6,6 0 0 1 22,28 L22,27 A5,5 0 0 0 27,22 Z"/></g>
+<g id="pressed-top"><rect fill="none" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" x="6" y="0" width="16" height="1"/></g>
+<g id="pressed-bottom"><rect fill="none" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" x="6" y="27" width="16" height="1"/></g>
+<g id="pressed-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" x="0" y="6" width="1" height="16"/></g>
+<g id="pressed-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" x="27" y="6" width="1" height="16"/></g>
+<g id="pressed-center"><rect fill="none" x="6" y="6" width="16" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" x="6" y="6" width="16" height="16"/></g>
+<g id="toolbutton-hover-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" d="M6,0 A6,6 0 0 0 0,6 L6,6 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
+<g id="toolbutton-hover-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" d="M22,0 A6,6 0 0 1 28,6 L22,6 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
+<g id="toolbutton-hover-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" d="M0,22 A6,6 0 0 0 6,28 L6,22 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
+<g id="toolbutton-hover-bottomright"><rect fill="none" x="22" y="22" width="6" height="6"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" d="M28,22 A6,6 0 0 1 22,28 L22,22 Z"/><path class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" d="M28,22 A6,6 0 0 1 22,28 L22,27 A5,5 0 0 0 27,22 Z"/></g>
+<g id="toolbutton-hover-top"><rect fill="none" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" x="6" y="0" width="16" height="1"/></g>
+<g id="toolbutton-hover-bottom"><rect fill="none" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" x="6" y="27" width="16" height="1"/></g>
+<g id="toolbutton-hover-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" x="0" y="6" width="1" height="16"/></g>
+<g id="toolbutton-hover-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.18" x="27" y="6" width="1" height="16"/></g>
+<g id="toolbutton-hover-center"><rect fill="none" x="6" y="6" width="16" height="16"/><rect class="ColorScheme-Text" fill="currentColor" fill-opacity="0.12" x="6" y="6" width="16" height="16"/></g>
+<g id="toolbutton-pressed-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" d="M6,0 A6,6 0 0 0 0,6 L6,6 Z"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
+<g id="toolbutton-pressed-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" d="M22,0 A6,6 0 0 1 28,6 L22,6 Z"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
+<g id="toolbutton-pressed-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" d="M0,22 A6,6 0 0 0 6,28 L6,22 Z"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
+<g id="toolbutton-pressed-bottomright"><rect fill="none" x="22" y="22" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" d="M28,22 A6,6 0 0 1 22,28 L22,22 Z"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" d="M28,22 A6,6 0 0 1 22,28 L22,27 A5,5 0 0 0 27,22 Z"/></g>
+<g id="toolbutton-pressed-top"><rect fill="none" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" x="6" y="0" width="16" height="1"/></g>
+<g id="toolbutton-pressed-bottom"><rect fill="none" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" x="6" y="27" width="16" height="1"/></g>
+<g id="toolbutton-pressed-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" x="0" y="6" width="1" height="16"/></g>
+<g id="toolbutton-pressed-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.7" x="27" y="6" width="1" height="16"/></g>
+<g id="toolbutton-pressed-center"><rect fill="none" x="6" y="6" width="16" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="0.3" x="6" y="6" width="16" height="16"/></g>
+<g id="toolbutton-focus-topleft"><rect fill="none" x="0" y="0" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" d="M6,0 A6,6 0 0 0 0,6 L1,6 A5,5 0 0 1 6,1 Z"/></g>
+<g id="toolbutton-focus-topright"><rect fill="none" x="22" y="0" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" d="M22,0 A6,6 0 0 1 28,6 L27,6 A5,5 0 0 0 22,1 Z"/></g>
+<g id="toolbutton-focus-bottomleft"><rect fill="none" x="0" y="22" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" d="M0,22 A6,6 0 0 0 6,28 L6,27 A5,5 0 0 1 1,22 Z"/></g>
+<g id="toolbutton-focus-bottomright"><rect fill="none" x="22" y="22" width="6" height="6"/><path class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" d="M28,22 A6,6 0 0 1 22,28 L22,27 A5,5 0 0 0 27,22 Z"/></g>
+<g id="toolbutton-focus-top"><rect fill="none" x="6" y="0" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" x="6" y="0" width="16" height="1"/></g>
+<g id="toolbutton-focus-bottom"><rect fill="none" x="6" y="22" width="16" height="6"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" x="6" y="27" width="16" height="1"/></g>
+<g id="toolbutton-focus-left"><rect fill="none" x="0" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" x="0" y="6" width="1" height="16"/></g>
+<g id="toolbutton-focus-right"><rect fill="none" x="22" y="6" width="6" height="16"/><rect class="ColorScheme-Highlight" fill="currentColor" fill-opacity="1.0" x="27" y="6" width="1" height="16"/></g>
+<g id="toolbutton-focus-center"><rect fill="none" x="6" y="6" width="16" height="16"/></g>
+
+<rect id="shadow-hint-top-margin" width="1" height="1" fill="none"/>
+<rect id="shadow-hint-bottom-margin" width="1" height="1" fill="none"/>
+<rect id="shadow-hint-right-margin" width="1" height="1" fill="none"/>
+<rect id="shadow-hint-left-margin" width="1" height="1" fill="none"/>
+<rect id="normal-hint-top-margin" width="1" height="1" fill="none"/>
+<rect id="normal-hint-bottom-margin" width="1" height="1" fill="none"/>
+<rect id="normal-hint-left-margin" width="1" height="1" fill="none"/>
+<rect id="normal-hint-right-margin" width="1" height="1" fill="none"/>
+<rect id="hover-hint-top-margin" width="1" height="1" fill="none"/>
+<rect id="hover-hint-bottom-margin" width="1" height="1" fill="none"/>
+<rect id="hover-hint-right-margin" width="1" height="1" fill="none"/>
+<rect id="hover-hint-left-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-hover-hint-top-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-hover-hint-bottom-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-hover-hint-right-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-hover-hint-left-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-focus-hint-top-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-focus-hint-bottom-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-focus-hint-left-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-focus-hint-right-margin" width="1" height="1" fill="none"/>
+<rect id="focus-hint-top-margin" width="1" height="1" fill="none"/>
+<rect id="focus-hint-bottom-margin" width="1" height="1" fill="none"/>
+<rect id="focus-hint-left-margin" width="1" height="1" fill="none"/>
+<rect id="focus-hint-right-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-pressed-hint-top-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-pressed-hint-bottom-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-pressed-hint-left-margin" width="1" height="1" fill="none"/>
+<rect id="toolbutton-pressed-hint-right-margin" width="1" height="1" fill="none"/>
+<rect id="normal-hint-compose-over-border" width="1" height="1" fill="none"/>
+<rect id="pressed-hint-top-margin" width="1" height="1" fill="none"/>
+<rect id="pressed-hint-bottom-margin" width="1" height="1" fill="none"/>
+<rect id="pressed-hint-left-margin" width="1" height="1" fill="none"/>
+<rect id="pressed-hint-right-margin" width="1" height="1" fill="none"/>
+<rect id="pressed-hint-compose-over-border" width="1" height="1" fill="none"/>
+</svg>

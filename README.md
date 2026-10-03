@@ -21,6 +21,11 @@ to Breeze:
 | `widgets/tasks` | Taskbar buttons: normal, hover, focused, needs attention, minimized, progress |
 | `widgets/plasmoidheading` | Popup headers and footers (a thin separator instead of a shaded bar) |
 | `widgets/frame`, `widgets/tabbar`, `widgets/menubaritem` | Frames, active tabs, menu bar items |
+| `widgets/button` | Buttons and tool buttons (normal, hover, pressed, focus) |
+| `widgets/slider` | Sliders: track, filled part and handle (e.g. volume) |
+| `widgets/scrollbar` | Scrollbars in Plasma popups |
+
+![Buttons, sliders and scrollbars](docs/controls-preview.png)
 
 The control graphics are derived from Breeze's own files: frame names and
 padding hints are copied verbatim, so sizes and alignment match Breeze and only
@@ -68,6 +73,40 @@ These aren't part of a Plasma theme, but complete the look:
 - **Translucent app menus** (Breeze): System Settings → Colors & Themes →
   Application Style → Breeze → Transparency, about halfway
   (`breezerc`: `[Style] MenuOpacity=50`)
+
+## Extras
+
+### Konsole and Yakuake
+
+`extras/konsole/` has a **Glass** colour scheme (Breeze colours, 80% opacity,
+blur) and a profile using it. Terminal text is small, so it is denser than the
+panel glass.
+
+```sh
+cp extras/konsole/Glass.* ~/.local/share/konsole/
+kwriteconfig6 --file konsolerc --group "Desktop Entry" --key DefaultProfile Glass.profile
+# Yakuake as a Flatpak keeps its own copy:
+cp extras/konsole/Glass.* ~/.var/app/org.kde.yakuake/data/konsole/
+kwriteconfig6 --file ~/.var/app/org.kde.yakuake/config/konsolerc --group "Desktop Entry" --key DefaultProfile Glass.profile
+```
+
+### Window title bars (Aurorae)
+
+`extras/aurorae/` generates a **Glass** Aurorae decoration: blurred glass title
+bars (same 50% tint as the panel, 10 px rounded top corners, 1 px border) and
+round glass buttons; close turns red on hover. Aurorae themes use fixed
+colours, so `generate.py` has Breeze Dark's values at the top.
+
+```sh
+python3 extras/aurorae/generate.py      # writes ~/.local/share/aurorae/themes/zhelly0-glass
+kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key library org.kde.kwin.aurorae
+kwriteconfig6 --file kwinrc --group org.kde.kdecoration2 --key theme __aurorae__svg__zhelly0-glass
+qdbus6 org.kde.KWin /KWin reconfigure
+```
+
+Blur needs the unprefixed `mask-*` frame in `decoration.svg`; Aurorae uses it
+to tell KWin which area to blur. Revert in System Settings → Window
+Decorations (pick Breeze).
 
 ## License
 
