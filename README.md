@@ -18,12 +18,14 @@ to Breeze:
 | `widgets/background`, `widgets/translucentbackground` | Widget backgrounds |
 | `widgets/lineedit` | Text fields, e.g. the KRunner and launcher search boxes |
 | `widgets/viewitem` | List highlights (hover / selected) in KRunner, the launcher, the tray |
-| `widgets/tasks` | Taskbar buttons: normal, hover, focused, needs attention, minimized, progress |
+| `widgets/tasks` | Taskbar buttons: running apps get an indicator bar (accent when focused, orange when asking for attention), so they stand out from pinned apps that aren't running |
 | `widgets/plasmoidheading` | Popup headers and footers (a thin separator instead of a shaded bar) |
 | `widgets/frame`, `widgets/tabbar`, `widgets/menubaritem` | Frames, active tabs, menu bar items |
 | `widgets/button` | Buttons and tool buttons (normal, hover, pressed, focus) |
 | `widgets/slider` | Sliders: track, filled part and handle (e.g. volume) |
 | `widgets/scrollbar` | Scrollbars in Plasma popups |
+
+![Taskbar buttons: pinned, running, minimized, hover, focused, attention](docs/tasks-preview.png)
 
 ![Buttons, sliders and scrollbars](docs/controls-preview.png)
 
