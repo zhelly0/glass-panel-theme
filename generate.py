@@ -32,12 +32,14 @@ SURFACE_RADIUS = 12  # panel, popups, tooltips, widget backgrounds
 CONTROL_RADIUS = 6   # fields, highlights, buttons inside surfaces
 
 
-def style(fill=None, line=None, r=CONTROL_RADIUS, sides="tblr", bar=None, bar_side="b", bar_shape="pill"):
+def style(fill=None, line=None, r=CONTROL_RADIUS, sides="tblr", bar=None, bar_side="b", bar_shape="pill", square=False):
     """fill/line: (colour class, opacity) or None. sides: which edges get the line.
     bar: (colour class, opacity, thickness px) indicator drawn along bar_side and
     around its two rounded corners, a shallow U (the "app is running" line on
-    taskbar buttons)."""
-    return {"fill": fill, "line": line, "r": r, "sides": sides, "bar": bar, "bar_side": bar_side, "bar_shape": bar_shape}
+    taskbar buttons). square: square tile corners while r still sets the corner
+    piece size (and so how far the bar is inset)."""
+    return {"fill": fill, "line": line, "r": r, "sides": sides, "bar": bar, "bar_side": bar_side,
+            "bar_shape": bar_shape, "square": square}
 
 
 # Surfaces
@@ -58,11 +60,12 @@ PROGRESS = style(("PositiveText", 0.30))
 # Taskbar buttons: a running app gets an indicator bar on the edge facing the
 # screen edge, so it stands out from pinned apps that aren't running (which
 # Plasma draws with no background at all).
-TASK_NORMAL = style(("Text", 0.06), bar=("Text", 0.55, 2))
-TASK_MINIMIZED = style(("Text", 0.03), bar=("Text", 0.28, 2))
-TASK_HOVER = style(("Text", 0.14), ("Text", 0.20), bar=("Text", 0.75, 2))
-TASK_FOCUS = style(("Highlight", 0.28), ("Highlight", 0.60), bar=("Highlight", 1.0, 3))
-TASK_ATTENTION = style(("NeutralText", 0.30), ("NeutralText", 0.70), bar=("NeutralText", 1.0, 3))
+# Tiles are square; only the indicator bar is rounded.
+TASK_NORMAL = style(("Text", 0.09), bar=("Text", 0.55, 2), square=True)
+TASK_MINIMIZED = style(("Text", 0.045), bar=("Text", 0.28, 2), square=True)
+TASK_HOVER = style(("Text", 0.17), ("Text", 0.20), bar=("Text", 0.75, 2), square=True)
+TASK_FOCUS = style(("Highlight", 0.32), ("Highlight", 0.60), bar=("Highlight", 1.0, 3), square=True)
+TASK_ATTENTION = style(("NeutralText", 0.30), ("NeutralText", 0.70), bar=("NeutralText", 1.0, 3), square=True)
 HEADER = style(None, ("Text", 0.12), r=0, sides="b")
 FOOTER = style(None, ("Text", 0.12), r=0, sides="t")
 FRAME_PLAIN = style(None, ("Text", 0.10))
@@ -168,7 +171,7 @@ def frame(prefix, st, mask=False):
     else:
         f, ln = paint(st["fill"]), paint(st["line"])
     sides = st["sides"]
-    rounded = R > 0 and sides == "tblr"
+    rounded = R > 0 and sides == "tblr" and not st.get("square")
     r1 = R - 1
 
     def shape(d):
@@ -198,7 +201,7 @@ def frame(prefix, st, mask=False):
                    "l": ("topleft", "bottomleft"), "r": ("topright", "bottomright")}
 
     def bar_corner(name):
-        if mask or not st.get("bar") or not rounded or name not in BAR_CORNERS[st.get("bar_side", "b")]:
+        if mask or not st.get("bar") or R <= 0 or name not in BAR_CORNERS[st.get("bar_side", "b")]:
             return ""
         cls, op, t = st["bar"]
         if st.get("bar_shape") == "pill":
@@ -242,10 +245,10 @@ def frame(prefix, st, mask=False):
         }
     else:
         corners = {
-            "topleft":     rect(f, 0, 0, C, C) + line("t", 0, 0, C, 1) + line("l", 0, 0, 1, C),
-            "topright":    rect(f, a, 0, C, C) + line("t", a, 0, C, 1) + line("r", b - 1, 0, 1, C),
-            "bottomleft":  rect(f, 0, a, C, C) + line("b", 0, b - 1, C, 1) + line("l", 0, a, 1, C),
-            "bottomright": rect(f, a, a, C, C) + line("b", a, b - 1, C, 1) + line("r", b - 1, a, 1, C),
+            "topleft":     rect(f, 0, 0, C, C) + line("t", 0, 0, C, 1) + line("l", 0, 0, 1, C) + bar_corner("topleft"),
+            "topright":    rect(f, a, 0, C, C) + line("t", a, 0, C, 1) + line("r", b - 1, 0, 1, C) + bar_corner("topright"),
+            "bottomleft":  rect(f, 0, a, C, C) + line("b", 0, b - 1, C, 1) + line("l", 0, a, 1, C) + bar_corner("bottomleft"),
+            "bottomright": rect(f, a, a, C, C) + line("b", a, b - 1, C, 1) + line("r", b - 1, a, 1, C) + bar_corner("bottomright"),
         }
     # An invisible rect pins every piece to its exact box, so a piece that is
     # fully transparent (or empty) still has the right size.
